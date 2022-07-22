@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118CE4E2B99538A293B50F4A /* Pods_Venta_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7C2E681FE236FC5399BD7E /* Pods_Venta_App.framework */; };
+		8A0291C8286BA86400615C3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A0291C7286BA86400615C3E /* GoogleService-Info.plist */; };
 		8A09B1C0285E73DA00664EAD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09B1BF285E73DA00664EAD /* SettingsViewController.swift */; };
 		8A09B1C2285E7BD200664EAD /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09B1C1285E7BD200664EAD /* AccountViewController.swift */; };
 		8A09B1C4285E7C9600664EAD /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A09B1C3285E7C9600664EAD /* ReceiptViewController.swift */; };
+		8A36A450286DF12700159D1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A36A44F286DF12700159D1E /* LoginViewController.swift */; };
+		8A4E41FE286B9DAB0077493C /* AccountCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E41FD286B9DAB0077493C /* AccountCustomer.swift */; };
 		8AE11166285AA49F009FEC0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE11165285AA49F009FEC0B /* AppDelegate.swift */; };
 		8AE11168285AA49F009FEC0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE11167285AA49F009FEC0B /* SceneDelegate.swift */; };
 		8AE1116A285AA49F009FEC0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE11169285AA49F009FEC0B /* ViewController.swift */; };
@@ -19,9 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1337C9AF21D2DF6D21502113 /* Pods-Venta App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venta App.release.xcconfig"; path = "Target Support Files/Pods-Venta App/Pods-Venta App.release.xcconfig"; sourceTree = "<group>"; };
+		3A7C2E681FE236FC5399BD7E /* Pods_Venta_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Venta_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0291C7286BA86400615C3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A09B1BF285E73DA00664EAD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8A09B1C1285E7BD200664EAD /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		8A09B1C3285E7C9600664EAD /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		8A106B6A286BAF1B00D20C36 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A36A44F286DF12700159D1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A4E41FD286B9DAB0077493C /* AccountCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCustomer.swift; sourceTree = "<group>"; };
 		8AE11162285AA49F009FEC0B /* Venta App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Venta App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE11165285AA49F009FEC0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AE11167285AA49F009FEC0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +40,7 @@
 		8AE1116E285AA4A0009FEC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AE11171285AA4A0009FEC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AE11173285AA4A0009FEC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC9E889AC7C0E3848B32986 /* Pods-Venta App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Venta App.debug.xcconfig"; path = "Target Support Files/Pods-Venta App/Pods-Venta App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118CE4E2B99538A293B50F4A /* Pods_Venta_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68903A85B87C233F545946DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FC9E889AC7C0E3848B32986 /* Pods-Venta App.debug.xcconfig */,
+				1337C9AF21D2DF6D21502113 /* Pods-Venta App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8AE11159285AA49F009FEC0B = {
 			isa = PBXGroup;
 			children = (
 				8AE11164285AA49F009FEC0B /* Venta App */,
 				8AE11163285AA49F009FEC0B /* Products */,
+				68903A85B87C233F545946DA /* Pods */,
+				F6E384D072CBF6A32E1B9DC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,18 +85,30 @@
 		8AE11164285AA49F009FEC0B /* Venta App */ = {
 			isa = PBXGroup;
 			children = (
+				8AE1116B285AA49F009FEC0B /* Main.storyboard */,
+				8A36A44F286DF12700159D1E /* LoginViewController.swift */,
 				8AE11165285AA49F009FEC0B /* AppDelegate.swift */,
 				8AE11167285AA49F009FEC0B /* SceneDelegate.swift */,
 				8AE11169285AA49F009FEC0B /* ViewController.swift */,
 				8A09B1C1285E7BD200664EAD /* AccountViewController.swift */,
 				8A09B1BF285E73DA00664EAD /* SettingsViewController.swift */,
 				8A09B1C3285E7C9600664EAD /* ReceiptViewController.swift */,
-				8AE1116B285AA49F009FEC0B /* Main.storyboard */,
+				8A0291C7286BA86400615C3E /* GoogleService-Info.plist */,
+				8A4E41FD286B9DAB0077493C /* AccountCustomer.swift */,
+				8A106B6A286BAF1B00D20C36 /* GoogleService-Info.plist */,
 				8AE1116E285AA4A0009FEC0B /* Assets.xcassets */,
 				8AE11170285AA4A0009FEC0B /* LaunchScreen.storyboard */,
 				8AE11173285AA4A0009FEC0B /* Info.plist */,
 			);
 			path = "Venta App";
+			sourceTree = "<group>";
+		};
+		F6E384D072CBF6A32E1B9DC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A7C2E681FE236FC5399BD7E /* Pods_Venta_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AE11176285AA4A0009FEC0B /* Build configuration list for PBXNativeTarget "Venta App" */;
 			buildPhases = (
+				173477D599F94ECB904CE803 /* [CP] Check Pods Manifest.lock */,
 				8AE1115E285AA49F009FEC0B /* Sources */,
 				8AE1115F285AA49F009FEC0B /* Frameworks */,
 				8AE11160285AA49F009FEC0B /* Resources */,
+				3D0E2DC32395915F10F1CA40 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 8AE11159285AA49F009FEC0B;
+			packageReferences = (
+				8A0291C6286BA83300615C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8AE11163285AA49F009FEC0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,12 +175,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE11172285AA4A0009FEC0B /* LaunchScreen.storyboard in Resources */,
+				8A0291C8286BA86400615C3E /* GoogleService-Info.plist in Resources */,
 				8AE1116F285AA4A0009FEC0B /* Assets.xcassets in Resources */,
 				8AE1116D285AA49F009FEC0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		173477D599F94ECB904CE803 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Venta App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0E2DC32395915F10F1CA40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Venta App/Pods-Venta App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Venta App/Pods-Venta App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Venta App/Pods-Venta App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AE1115E285AA49F009FEC0B /* Sources */ = {
@@ -151,7 +234,9 @@
 				8A09B1C2285E7BD200664EAD /* AccountViewController.swift in Sources */,
 				8AE11166285AA49F009FEC0B /* AppDelegate.swift in Sources */,
 				8A09B1C4285E7C9600664EAD /* ReceiptViewController.swift in Sources */,
+				8A36A450286DF12700159D1E /* LoginViewController.swift in Sources */,
 				8AE11168285AA49F009FEC0B /* SceneDelegate.swift in Sources */,
+				8A4E41FE286B9DAB0077493C /* AccountCustomer.swift in Sources */,
 				8A09B1C0285E73DA00664EAD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +319,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -294,6 +380,7 @@
 		};
 		8AE11177285AA4A0009FEC0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC9E889AC7C0E3848B32986 /* Pods-Venta App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +409,7 @@
 		};
 		8AE11178285AA4A0009FEC0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1337C9AF21D2DF6D21502113 /* Pods-Venta App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +458,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A0291C6286BA83300615C3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8AE1115A285AA49F009FEC0B /* Project object */;
 }

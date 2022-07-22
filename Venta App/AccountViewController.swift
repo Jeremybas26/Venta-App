@@ -6,26 +6,32 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class AccountViewController: UIViewController {
 
+    @IBOutlet var submitButton: UIButton!
     @IBOutlet var accountLabel: UILabel!
+    @IBOutlet var foodText: UITextField!
+    @IBOutlet var changeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if (Auth.auth().currentUser != nil) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "login")
+            vc.modalPresentationStyle = .overFullScreen
+            present(vc, animated: false)
+        }
+        changeLabel.text = "Change Option 2"
+        
+        }
+    
+    @IBAction func submit(_ sender: Any) {
+        ReceiptViewController.optionTwo = foodText.text!
+        print("Changed Successful")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
     }
-    */
 
-}

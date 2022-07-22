@@ -12,12 +12,73 @@ class ReceiptViewController: UIViewController {
     
     @IBOutlet var receiptLabel: UILabel!
     @IBOutlet var orderNumber: UILabel!
+    @IBOutlet var menuLabel: UILabel!
+    @IBOutlet var quantityLabel: UILabel!
+    @IBOutlet var purchasedLabel: UILabel!
+    static var quantityInt = 0
+    static var price = 0
+    static var optionOne = "Burger"
+    static var optionTwo = "Tacos"
+    static var optionThree = "Rice"
+    static var optionFour = "Carne Asada"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    public var completionHandler: ((String?) -> Void)?
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        quantityLabel.text = String(describing: ReceiptViewController.quantityInt)
+        
+        if ViewController.boolOne == false {
+            ReceiptViewController.optionTwo = ""
+        }
+        
+        if ViewController.boolTwo == false {
+            ReceiptViewController.optionFour = ""
+        }
+        
+        if ViewController.boolThree == false {
+            ReceiptViewController.optionThree = ""
+        }
+        
+        
+        switch ReceiptViewController.quantityInt {
+        case 1:
+            ReceiptViewController.price = 10
+        case 2:
+            ReceiptViewController.price = 20
+        case 3:
+            ReceiptViewController.price = 30
+        case 4:
+            ReceiptViewController.price = 40
+        case 5:
+            ReceiptViewController.price = 50
+        default:
+            ReceiptViewController.price = 0
+        }
+        
+        menuLabel.text = """
+        \(ReceiptViewController.optionOne)
+        \(ReceiptViewController.optionTwo)
+        \(ReceiptViewController.optionThree)
+        \(ReceiptViewController.optionFour)
+        """
+        
     }
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+
+    
     
 
     /*
@@ -30,4 +91,3 @@ class ReceiptViewController: UIViewController {
     }
     */
 
-}
